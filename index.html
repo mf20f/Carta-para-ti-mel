@@ -305,6 +305,11 @@ color: #333;
 	</div>
 
 </div>
+<div>
+	<container>
+		<button onclick="descargarImagen()">Descargar Imagen</button>
+	</container>
+</div>
 <!-- partial -->
  
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4704501585981299"
@@ -343,6 +348,18 @@ color: #333;
     });
 
 </script>
+
+
+  <script>
+    function descargarImagen() {
+      const enlace = document.createElement('a');
+      enlace.href = 'melmel.jpg'; // Cambia esta ruta
+      enlace.download = 'melmel.jpg';        // Cambia el nombre si lo deseas
+      document.body.appendChild(enlace);
+      enlace.click();
+      document.body.removeChild(enlace);
+    }
+  </script
 
   
 
