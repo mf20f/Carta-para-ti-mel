@@ -447,7 +447,7 @@ color: #333;
 	</div>
         <center style="margin-top: 100px;">
 		<p><span>para ti<br> despues de leer el mensaje presieona el boton nose si sera de tu agrado</span></p>
-		<button class="download-btn pixel-corners" onclick="descargarImagen()">
+		<button class="download-btn pixel-corners" onclick="descargarImagen1()">
                     <div class="button-content">
                           <div class="svg-container">
                                <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -504,10 +504,10 @@ color: #333;
 
 
   <script>
-    function descargarImagen() {
+    function descargarImagen1() {
       const enlace = document.createElement('a');
-      enlace.href = 'lila.jpg'; // Cambia esta ruta
-      enlace.download = 'lila.jpg';        // Cambia el nombre si lo deseas
+      enlace.href = 'lilam.jpg'; // Cambia esta ruta
+      enlace.download = 'lilam.jpg';        // Cambia el nombre si lo deseas
       document.body.appendChild(enlace);
       enlace.click();
       document.body.removeChild(enlace);
